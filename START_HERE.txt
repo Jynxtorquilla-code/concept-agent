@@ -1,0 +1,182 @@
+╔═══════════════════════════════════════════════════════════════════╗
+║                                                                   ║
+║              🌲 NATUURHUISJE AGENT - START HIER 🌲                ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+
+
+📦 JE HEBT ALLES WAT JE NODIG HEBT!
+
+Deze ZIP bevat:
+✅ natuurhuisje_agent_v2.py  - De AI agent
+✅ web_ui_v2.py               - Web interface  
+✅ training_data.csv          - 51 gelabelde voorbeelden
+✅ requirements.txt           - Dependencies
+✅ README.md                  - Documentatie
+✅ DEPLOY_LIVE.md            - Deployment guide
+✅ DEPLOYMENT_CHECKLIST.txt  - Stap-voor-stap checklist
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🚀 SNEL NAAR LIVE (15 MINUTEN)
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+
+STAP 1: MAAK GITHUB ACCOUNT
+────────────────────────────
+□ Ga naar: https://github.com
+□ Klik: Sign up
+□ Vul in: email, username, password
+□ Verify email
+
+
+STAP 2: MAAK REPOSITORY
+────────────────────────
+□ Ga naar: https://github.com/new
+□ Naam: natuurhuisje-agent
+□ Kies: Public
+□ NIET aanvinken: "Add a README"
+□ Klik: Create repository
+
+
+STAP 3: UPLOAD DEZE BESTANDEN
+──────────────────────────────
+□ Op de lege repo pagina, klik: "uploading an existing file"
+□ Sleep ALLE bestanden uit deze map naar de browser
+□ Wacht tot ze allemaal geupload zijn (groene vinkjes)
+□ Scroll naar beneden
+□ Klik: "Commit changes"
+
+Je zou moeten zien:
+✅ 7 bestanden in je repository
+✅ README.md toont je homepage
+
+
+STAP 4: GA NAAR STREAMLIT CLOUD
+────────────────────────────────
+□ Ga naar: https://share.streamlit.io
+□ Klik: "Sign in with GitHub"
+□ Geef Streamlit toegang
+
+
+STAP 5: DEPLOY JE APP
+──────────────────────
+□ Klik: "New app"
+□ Kies:
+   Repository: jouw-username/natuurhuisje-agent
+   Branch: main
+   Main file: web_ui_v2.py
+
+□ Klik: "Advanced settings"
+
+□ Onder "Secrets" voeg toe:
+   ┌─────────────────────────────────────────────────┐
+   │ ANTHROPIC_API_KEY = "sk-ant-jouw-key-hier"     │
+   └─────────────────────────────────────────────────┘
+   
+   ⚠️  Gebruik JOUW API key!
+   ⚠️  Quotes zijn belangrijk!
+
+□ Klik: "Deploy!"
+
+
+STAP 6: WACHT 3 MINUTEN ☕
+─────────────────────────
+Streamlit bouwt je app...
+
+Je ziet:
+⏳ Installing dependencies...
+⏳ Starting app...
+✅ Your app is live!
+
+
+STAP 7: TEST!
+─────────────
+□ Open je URL: https://natuurhuisje-agent-[jouwusername].streamlit.app
+□ Zie je de interface? ✅
+□ Zie je "Getraind met 51 voorbeelden"? ✅
+□ Test met: https://www.natuurhuisje.nl/vakantiehuisje/90113
+□ Krijg je een score? ✅
+
+🎉 SUCCESS! Je agent is live!
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+📚 MEER INFO
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Gedetailleerde instructies:
+→ Open: DEPLOYMENT_CHECKLIST.txt
+
+Uitgebreide deployment guide:
+→ Open: DEPLOY_LIVE.md
+
+Technische documentatie:
+→ Open: README.md
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+❓ VEELGESTELDE VRAGEN
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Q: Waar haal ik een Anthropic API key?
+A: https://console.anthropic.com → Create API key
+
+Q: Kost dit geld?
+A: Streamlit Cloud = gratis
+   Anthropic API = ~€0.005 per analyse (~€5-50/maand typisch)
+
+Q: Kan ik een custom domain gebruiken?
+A: Ja, met Streamlit Pro tier ($20/maand)
+
+Q: Hoe update ik de agent?
+A: Upload nieuwe files naar GitHub, Streamlit update automatisch!
+
+Q: Werkt dit met mijn Excel training data?
+A: Ja! Je training_data.csv is al geconverteerd en klaar
+
+Q: Kan ik meer voorbeelden toevoegen?
+A: Ja! Open training_data.csv, voeg rijen toe, upload naar GitHub
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🆘 HULP NODIG?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚠️  App start niet?
+→ Check logs in Streamlit dashboard
+→ Verify alle bestanden uploaded zijn
+→ Check main file is: web_ui_v2.py
+
+⚠️  "API Key Invalid"?  
+→ Check format: ANTHROPIC_API_KEY = "sk-ant-..."
+→ Quotes zijn belangrijk!
+→ Geen spaties rond =
+
+⚠️  "Training data not found"?
+→ Check training_data.csv is uploaded
+→ Filename is case sensitive!
+
+⚠️  "Module not found"?
+→ Check requirements.txt is uploaded
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+🎯 WAT NU?
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Na deployment:
+□ Deel URL met je team
+□ Test met 10-20 natuurhuisjes
+□ Verzamel feedback
+□ Voeg edge cases toe aan training data
+□ Verbeter agent op basis van resultaten
+
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+                    Veel succes! 🌲🚀
+                    
+           Je agent is klaar om live te gaan!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
